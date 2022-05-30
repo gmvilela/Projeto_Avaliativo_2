@@ -1,0 +1,26 @@
+<form class="needs-validation" [formGroup]="colecaoEditForm"> novalidate>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationTooltip01">Editar Coleção</label>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Nome da Coleção"
+                formControlName="nome" required>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Responsável pela coleção"
+                formControlName="responsavel" required>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Para qual estação?"
+                formControlName="estacao" required>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Para qual marca você está criando?"
+                formControlName="marca" required>
+            <input type="number" class="form-control" id="validationTooltip01" placeholder="Qual é o orçamento desta coleção?"
+                formControlName="orcamento" required>
+            <input type="number" class="form-control" id="validationTooltip01" placeholder="Ano de Lançamento"
+                formControlName="anoLancamento" required>
+        </div>
+    </div>
+
+    <div style="margin-top: 10px">
+        <button type="sumit" class="btn btn-primary" (click)="onSubmitEditaColecao()">Atualizar</button>
+        <button type="button" class="btn btn-default" (click)="onCancelEditColecao()" >Cancelar</button>
+    </div>
+</form>
+
+<app-menu-lateral></app-menu-lateral>

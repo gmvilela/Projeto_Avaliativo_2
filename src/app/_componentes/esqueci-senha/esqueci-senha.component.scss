@@ -1,0 +1,89 @@
+.body {
+    background-color: rgb(217, 233, 238);
+    width: auto;
+    height: 650px;
+}
+
+.imgSimbAudaces {
+    position: absolute;
+    left: auto;
+    right: 47.5%;
+    top: 10%;
+    bottom: 73.93%;
+}
+
+.box-login {
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 480px;
+    height: 407px;
+    left: 460px;
+    top: 150px;
+}
+
+.col-sm-3RedefinirSenha {
+    top: 50px;
+    margin: 10px;
+    left: 100px;
+    right: 100px;
+    margin-left: 1px;
+    margin-top: 40px;
+    text-align-last: center;
+    font-family: 'Inter';
+    color: #2C2C2C;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #304C71;
+
+}
+
+.credenciaisConta {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-align-last: center;
+    text-justify: auto;
+    color: #B4B6C1;
+}
+
+#specificSizeInputGroupUsername {
+    margin-top: 20px;
+}
+
+.col-sm-3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2C2C2C;
+    text-align: center;
+    width: 350px;
+    margin: 10px;
+    margin-left: 80px;
+}
+
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 133px;
+    gap: 10px;
+    position: absolute;
+    width: 352px;
+    height: 50px;
+    left: 64px;
+    top: 300px;
+    background: #0073CF;
+    border-radius: 6px;
+}

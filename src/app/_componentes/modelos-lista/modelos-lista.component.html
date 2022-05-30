@@ -1,0 +1,34 @@
+<div class="card mt-3">
+    <div class="card-header">
+        <div class="float-left">
+            <h4>Modelos</h4>
+        </div>
+        <div class="float-right">
+            <button type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['novoModelo']">Criar Modelo</button>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ModeloID</th>
+                    <th>Nome do Modelo</th>
+                    <th>Coleção</th>
+                    <th>Responsável</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let modelo of modelos$ | async" (click)="onEditModelo(modelo.id)">
+                    <td> {{modelo.id}} </td>
+                    <td> {{modelo.nome}} </td>
+                    <td> {{modelo.colecao}}  </td>
+                    <td> {{modelo.responsavel}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<app-menu-lateral></app-menu-lateral>
+

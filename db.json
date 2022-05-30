@@ -1,0 +1,105 @@
+{
+  "modelos": [
+    {
+      "id": 4,
+      "nome": "Modelo 4 modificado",
+      "tipo": "chapéu",
+      "bordado": "Sim",
+      "responsavel": "João",
+      "colecao": "2",
+      "estampa": "Não"
+    },
+    {
+      "nome": "Justus",
+      "tipo": "biquíni",
+      "bordado": "Não",
+      "responsavel": "Maria",
+      "colecao": "5",
+      "estampa": "Não",
+      "id": 5
+    },
+    {
+      "nome": "modelo 3",
+      "tipo": "camisa",
+      "bordado": "Não",
+      "responsavel": "João",
+      "colecao": "5",
+      "estampa": "Sim",
+      "id": 6
+    },
+    {
+      "nome": "adasdas",
+      "tipo": "calça",
+      "bordado": "Não",
+      "responsavel": "asdasdas",
+      "colecao": "3",
+      "estampa": "Sim",
+      "id": 7
+    },
+    {
+      "nome": "adasdasda",
+      "tipo": "bolsa",
+      "bordado": "Não",
+      "responsavel": "dasdasd",
+      "colecao": "4",
+      "estampa": "Não",
+      "id": 8
+    }
+  ],
+  "colecoes": [
+    {
+      "id": 1,
+      "nome": "Coleção 1",
+      "responsavel": "Gabriel modificado",
+      "estacao": "Inverno",
+      "marca": "Senai modificado",
+      "orcamento": 25,
+      "anoLancamento": "2022"
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2 mudada",
+      "responsavel": "Yan editado de novo",
+      "estacao": "Verao editado novamente",
+      "marca": "Devon",
+      "orcamento": 30,
+      "anoLancamento": "2023"
+    },
+    {
+      "id": 3,
+      "nome": "Saturno13",
+      "responsavel": "Otavio",
+      "estacao": "Outono",
+      "marca": "Zoom",
+      "orcamento": 20,
+      "anoLancamento": "2022"
+    },
+    {
+      "nome": "azul",
+      "responsavel": "joão",
+      "estacao": "inverno",
+      "marca": "zoom",
+      "orcamento": 56,
+      "anoLancamento": 2022,
+      "id": 4
+    },
+    {
+      "nome": "teste",
+      "responsavel": "teste",
+      "estacao": "verão",
+      "marca": "zoom",
+      "orcamento": 60,
+      "anoLancamento": 2023,
+      "id": 5
+    },
+    {
+      "nome": "teste2",
+      "responsavel": "teste2",
+      "estacao": "outono",
+      "marca": "dep",
+      "orcamento": 70,
+      "anoLancamento": 2024,
+      "id": 6
+    }
+  ]
+}

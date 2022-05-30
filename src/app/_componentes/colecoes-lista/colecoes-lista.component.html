@@ -1,0 +1,33 @@
+<div class="card mt-3">
+    <div class="card-header">
+        <div class="float-left">
+            <h4>Coleções</h4>
+        </div>
+        <div class="float-right">
+            <button type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['novaColecao']" >Criar Coleção</button>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ColecaoID</th>
+                    <th>Nome da Coleção</th>
+                    <th>Estação e Lançamento</th>
+                    <th>Responsável</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let colecao of colecoes$ | async" (click)="onEditColecao(colecao.id)">
+                    <td> {{colecao.id}} </td>
+                    <td> {{colecao.nome}} </td>
+                    <td> {{colecao.estacao + ' ' + colecao.anoLancamento}} </td>
+                    <td> {{colecao.responsavel}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<app-menu-lateral></app-menu-lateral>

@@ -1,0 +1,48 @@
+<div class="card mt-3">
+    <div class="card-header">
+        <div class="float-left">
+            <h4>Bem Vindo, Gabriel</h4>
+        </div>
+        <div class="float-right">
+            <div>
+                <span>Coleções</span>
+                <span> {{totalColecoes}} </span>
+            </div>
+            <div>
+                <span>Modelos</span>
+                <span> {{totalModelos}} </span>
+            </div>
+            <div>
+                <span>Orçamento Médio por Coleção</span>
+                <span> R$ {{sumall/totalColecoes}} </span>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div>
+            <h4>Maiores Orçamentos</h4>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ColecaoID</th>
+                    <th>Nome da Coleção</th>
+                    <th>Orçamento</th>
+                    <th>Responsável</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let colecao of lista5Colecoes">
+                        <td> {{colecao.id}} </td>
+                        <td> {{colecao.nome}} </td>
+                        <td> {{colecao.orcamento}} </td>
+                        <td> {{colecao.responsavel}} </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<app-menu-lateral></app-menu-lateral>
+

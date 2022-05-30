@@ -1,0 +1,14 @@
+<body class="body">
+  <img [src]="imageAudaces" class="imgSimbAudaces">
+  <div class="box-login">
+    <form class="row gx-3 gy-2 align-items-center" [formGroup]="_redefiniSenhaForm" novalidate>
+        <label class="col-sm-3RedefinirSenha" for="specificSizeInputName">Redefinir Senha</label>
+        <p class="credenciaisConta">Digite o e-mail associado à sua conta e enviaremos instruções para redefinir sua senha</p>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" id="specificSizeInputName" formControlName="email" required
+          placeholder="Informe seu e-mail">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="recuperarSenhaSubmit()">Enviar Recuperação</button>
+    </form>
+  </div>
+</body>

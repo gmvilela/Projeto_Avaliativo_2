@@ -1,0 +1,20 @@
+<body class="body">
+
+  <img [src]="imageAudaces" class="imgSimbAudaces">
+
+  <div class="box-login">
+    <form class="row gx-3 gy-2 align-items-center" [formGroup]="_loginForm" novalidate>
+        <label class="col-sm-3SigIn" for="specificSizeInputName">Sign In</label>
+        <p class="credenciaisConta">Insira suas credenciais para acessar sua conta</p>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" id="specificSizeInputName" formControlName="email" required
+          placeholder="Informe seu e-mail">
+          <input type="text" class="form-control" id="specificSizeInputGroupUsername" formControlName="senha" required
+            placeholder="Informe sua senha">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="onSubmit()">Entrar</button>
+        <span id="esqueceuSenha">Esqueceu sua senha?</span>
+        <span id="redefinirSenha" (click)="forgotPassword()">Redefinir Senha</span>
+    </form>
+  </div>
+</body>

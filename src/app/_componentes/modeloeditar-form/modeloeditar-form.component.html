@@ -1,0 +1,61 @@
+<form class="needs-validation" [formGroup]="modeloEditForm" novalidate>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationTooltip01">Editar Modelo</label>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Nome do Modelo"
+                formControlName="nome" required>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Responsável pelo modelo"
+                formControlName="responsavel" required>
+            <select formControlName="tipo" required class="form-select" aria-label="Default select example">
+                <option selected>Tipo do Modelo</option>
+                <option value="bermuda">Bermuda</option>
+                <option value="biquíni">Biquíni</option>
+                <option value="bolsa">Bolsa</option>
+                <option value="boné">Boné</option>
+                <option value="calça">Calça</option>
+                <option value="calçados">Calçados</option>
+                <option value="camisa">Camisa</option>
+                <option value="chapéu">Chapéu</option>
+                <option value="saia">Saia</option>
+            </select>
+            <select class="form-select" aria-label="Default select example" formControlName="colecao" required>
+                <option *ngFor="let colecao of colecoes$ | async" value="{{colecao.id}}"> {{colecao.nome}} </option>
+            </select>
+            <h6>Possui bordado?</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultBordado" id="flexRadioDefault1" value="Sim" formControlName="bordado" required> 
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Sim
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultBordado" id="flexRadioDefault2" value="Não" formControlName="bordado" required>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Não
+                    </label>
+                </div>
+            <h6>Possui estampa?</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultEstampa" id="flexRadioDefault1" value="Sim" formControlName="estampa" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Sim
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultEstampa" id="flexRadioDefault2" value="Não" formControlName="estampa" required>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Não
+                    </label>
+                </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 10px">
+        <button type="sumit" class="btn btn-primary" (click)="onSubmitEditaModelo()">Salvar</button>
+        <button type="button" class="btn btn-default" (click)="onCancelarModelo()" >Cancelar</button>
+        <button type="submit" class="btn btn-primary" (click)="onDeleteModelo()">Excluir</button>
+    </div>
+</form>
+
+<app-menu-lateral></app-menu-lateral>
+
